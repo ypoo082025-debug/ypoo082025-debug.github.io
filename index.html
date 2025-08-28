@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang cá nhân – Tên Bạn</title>
+  <meta name="description" content="Portfolio & blog của Tên Bạn.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin: 0; padding: 0; }
+    header, main, footer { max-width: 880px; margin: auto; padding: 20px; }
+    header { display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: 15px; text-decoration: none; color: #333; }
+    .hero { padding: 40px 0; }
+    .hero h1 { font-size: 36px; margin: 0; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin: 10px 0; }
+    footer { font-size: 14px; color: #666; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Tên Bạn</strong></div>
+    <nav>
+      <a href="#du-an">Dự án</a>
+      <a href="#ve-toi">Về tôi</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Xin chào, mình là Tên Bạn 👋</h1>
+      <p>Đây là website cá nhân của mình. Mình chia sẻ dự án và cách liên hệ tại đây.</p>
+    </section>
+    <section id="du-an">
+      <h2>Dự án</h2>
+      <div class="card">
+        <h3>Project A</h3>
+        <p>Mô tả ngắn về dự án A.</p>
+      </div>
+      <div class="card">
+        <h3>Project B</h3>
+        <p>Mô tả ngắn về dự án B.</p>
+      </div>
+    </section>
+    <section id="ve-toi">
+      <h2>Về tôi</h2>
+      <p>Thông tin ngắn gọn về bạn: kỹ năng, sở thích, kinh nghiệm.</p>
+    </section>
+    <section id="lien-he">
+      <h2>Liên hệ</h2>
+      <p>Email: <a href="mailto:ban@example.com">ban@example.com</a></p>
+    </section>
+  </main>
+  <footer>
+    © <span id="y"></span> Tên Bạn
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
